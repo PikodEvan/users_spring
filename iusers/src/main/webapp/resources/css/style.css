@@ -1,0 +1,106 @@
+/*v css */
+
+body{
+    color: #333;
+    font-family: verdana;
+    font-size: 14px;
+}
+
+h2{
+    color: #333;
+    font-family: verdana;
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 0px #def;
+}
+
+a{
+    color: #333;
+    font-family: verdana;
+    font-size: 14px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #777;
+    padding: 10px;
+    text-align: center;
+}
+
+input[type="text"], input[type="password"], input[type="submit"], button[type="submit"]{
+    padding: 5px 10px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    margin-right: 5px;
+    background: #f3f9ff;
+    margin-bottom: 10px;
+}
+
+:focus {
+    outline: 1px solid #fff;
+    border-radius: 3px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus{
+    border: 1px solid #fff;
+}
+
+button[type="submit"] {
+    font-size: 14px;
+    font-family: tahoma;
+    padding: 7px 20px;
+    font-weight: bold;
+    color: #444;
+    margin-top: 5px;
+}
+
+input[type="submit"]:hover, button[type="submit"]:hover {
+    transition: .5s;
+    background: #b3e4ff;
+    border: 1px solid #fff;
+    cursor:pointer;
+}
+
+.m{
+    background: #ddd;
+}
+
+.auth, .auth2{
+    display: block;
+    position: absolute;
+    min-width: 460px;
+    background: #fff;
+    left: 50%;
+    margin-left: -310px;
+    margin-top: 200px;
+    padding: 40px 60px;
+    border: 1px solid #7df;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 10px #aaa5;
+
+    background: #b5e8ff ; /* Для старых браузеров - без градиента */
+    background: -moz-linear-gradient(top,  #b5e8ff  0%, #7cd6ff  100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b5e8ff ), color-stop(100%,#7cd6ff )); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #b5e8ff  0%,#7cd6ff  100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #b5e8ff  0%,#7cd6ff  100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #b5e8ff  0%,#7cd6ff  100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #b5e8ff  0%,#7cd6ff  100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5e8ff', endColorstr='#7cd6ff',GradientType=0 ); /* IE6-9 */
+}
+
+.auth2 {
+    min-width: 300px;
+    margin-left: -210px;
+}
+
+.error{
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 7px;
+    font-size: 12px;
+    color: #b55;
+    font-weight: bold;
+}
