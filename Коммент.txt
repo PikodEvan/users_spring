@@ -1,0 +1,13 @@
+Использую MySQL
+Необходимо создать базу 'spring'.
+После автоматического создания таблиц 'users', 'roles' и 'users_roles' необходимо добавить записи:
+
+INSERT INTO roles (id, name) VALUES
+(1, 'ROLE_USER'),
+(2, 'ROLE_ADMIN');
+
+INSERT INTO users (id, password, username) VALUES
+(1, '$2a$10$6DZhxuxTQQjJnZKVs78QxOqkQuha37EFK/ih7lvm0/EVs8xE6OXnm', 'admin');
+
+INSERT INTO users_roles (user_id, roles_id) VALUES
+(1, 2);
